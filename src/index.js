@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
+    <div id="backdrop-root"></div>
+    <div id="modaloverlay-root"></div>
     <App />
   </React.StrictMode>,
   document.getElementById('root')

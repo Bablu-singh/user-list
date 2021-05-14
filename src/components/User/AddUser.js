@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Wrapper from "../Helper/Wrapper";
 import Button from "../UI/Button";
 import Card from "../UI/Card";
 import ErrorModule from "../UI/ErrorModuls";
@@ -46,7 +47,7 @@ const AddUser = (props) => {
   };
 
   return (
-    <div>
+    <Wrapper>
       {showErrorModule && (
         <ErrorModule
           onError={errorModuleHandler}
@@ -81,7 +82,7 @@ const AddUser = (props) => {
           </Button>
         </form>
       </Card>
-    </div>
+    </Wrapper>
   );
 };
 export default AddUser;

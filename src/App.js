@@ -1,7 +1,7 @@
 import "./App.css";
 import AddUser from "./components/User/AddUser";
 import UserList from "./components/User/UserList";
-import {useState} from 'react'
+import React, {useState} from 'react'
 
 const data = [
   {id: 'a', name: "bablu singh", age: "24" },
@@ -20,10 +20,10 @@ function App() {
     })
   }
   return (
-    <div>
+    <React.Fragment>
       <AddUser onAddUser={onAddUser}/>
       <UserList users={userData} />
-    </div>
+    </React.Fragment>
   );
 }
 
